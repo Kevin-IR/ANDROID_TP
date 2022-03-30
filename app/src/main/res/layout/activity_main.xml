@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="105dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <CheckBox
+        android:id="@+id/lundi"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:text="Lundi"
+        app:layout_constraintStart_toEndOf="@+id/Association"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_mdp_saisie" />
+
+    <CheckBox
+        android:id="@+id/vendredi"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:text="Vendredi"
+        app:layout_constraintStart_toEndOf="@+id/jeudi"
+        app:layout_constraintTop_toBottomOf="@+id/mardi" />
+
+    <CheckBox
+        android:id="@+id/jeudi"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Jeudi"
+        app:layout_constraintStart_toStartOf="@+id/lundi"
+        app:layout_constraintTop_toBottomOf="@+id/lundi" />
+
+    <CheckBox
+        android:id="@+id/mercredi"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:text="Mecredi"
+        app:layout_constraintStart_toEndOf="@+id/mardi"
+        app:layout_constraintTop_toTopOf="@+id/mardi" />
+
+    <CheckBox
+        android:id="@+id/mardi"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:text="Mardi"
+        app:layout_constraintStart_toEndOf="@+id/lundi"
+        app:layout_constraintTop_toTopOf="@+id/lundi" />
+
+    <EditText
+        android:id="@+id/confirm_mdp_saisie"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/app_name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/mdp_saisie"
+        app:layout_constraintTop_toBottomOf="@+id/mdp_saisie" />
+
+    <EditText
+        android:id="@+id/mdp_saisie"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/app_name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/pseudo_saisie"
+        app:layout_constraintTop_toBottomOf="@+id/pseudo_saisie" />
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="379dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="Inscription Multi-associations sportives"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Inscriptions"
+        android:layout_width="105dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="12dp"
+        android:text="Inscriptions"
+        android:textColor="#ECA741"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/titre"
+        app:layout_constraintTop_toBottomOf="@+id/titre" />
+
+    <TextView
+        android:id="@+id/pseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="122dp"
+        android:text="Pseudo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre" />
+
+    <TextView
+        android:id="@+id/mdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Mot de passe"
+        app:layout_constraintStart_toStartOf="@+id/pseudo"
+        app:layout_constraintTop_toBottomOf="@+id/pseudo" />
+
+    <TextView
+        android:id="@+id/Confirm_mdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Comfirmer le mot de passe"
+        app:layout_constraintStart_toStartOf="@+id/mdp"
+        app:layout_constraintTop_toBottomOf="@+id/mdp" />
+
+    <TextView
+        android:id="@+id/Association"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Association"
+        app:layout_constraintStart_toStartOf="@+id/Confirm_mdp"
+        app:layout_constraintTop_toBottomOf="@+id/Confirm_mdp" />
+
+    <TextView
+        android:id="@+id/Disponibilité"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Disponibilité"
+        app:layout_constraintStart_toStartOf="@+id/Association"
+        app:layout_constraintTop_toBottomOf="@+id/Association" />
+
+    <TextView
+        android:id="@+id/Niveau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Niveau"
+        app:layout_constraintStart_toStartOf="@+id/Disponibilité"
+        app:layout_constraintTop_toBottomOf="@+id/Disponibilité" />
+
+    <EditText
+        android:id="@+id/pseudo_saisie"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="@string/app_name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/pseudo"
+        app:layout_constraintTop_toBottomOf="@+id/Inscriptions" />
+
+    <Spinner
+        android:id="@+id/Combobox_Asso"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="@+id/confirm_mdp_saisie"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_mdp_saisie" />
+
+    <TextView
+        android:id="@+id/Commentaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:text="Commentaire"
+        app:layout_constraintStart_toStartOf="@+id/Niveau"
+        app:layout_constraintTop_toBottomOf="@+id/Niveau" />
+
+    <EditText
+        android:id="@+id/Commentaire_cadre"
+        android:layout_width="284dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/app_name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/jeudi"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="334dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/jeudi"
+        app:layout_constraintTop_toBottomOf="@+id/vendredi">
+
+        <RadioButton
+            android:id="@+id/debutant"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:text="Debutant"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/intermediaire"
+            android:layout_width="134dp"
+            android:layout_height="36dp"
+            android:text="Intermediaire"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/haut"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:text="Haut"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/valide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="215dp"
+        android:text="Validé"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Commentaire_cadre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
